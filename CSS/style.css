@@ -118,6 +118,7 @@ header.over-hero.is-solid {
     text-decoration: none;
     font-family: 'Quicksand', 'Segoe UI', sans-serif;
     font-size: 10.5px;
+    line-height: 1.1;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -524,7 +525,7 @@ main a:hover {
   }
 
   .kjevle-list {
-    height: 38px;
+    height: 42px;
     padding: 0 14px;
     gap: 16px;
   }
