@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://oskaraaserud-dev.github.io/glasur/sitemap.xml

@@ -139,9 +139,16 @@ header.over-hero.is-solid {
     height: 17px;
 }
 
-.kjevle-link:hover .kjevle-icon-wrap {
+.kjevle-link:hover .kjevle-icon-wrap,
+.kjevle-link:focus-visible .kjevle-icon-wrap {
     background: #f5f0eb;
     transform: translateY(-2px);
+}
+
+.kjevle-link:focus-visible {
+    outline: 2px solid #8B4513;
+    outline-offset: 2px;
+    border-radius: 4px;
 }
 
 .kjevle-link[aria-current="page"] .kjevle-icon-wrap {
@@ -194,8 +201,7 @@ section {
     box-shadow: 0 4px 20px rgba(59, 31, 14, 0.06);
 }
 
-section.hero,
-section.forsidebilde {
+section.hero {
     background-color: transparent;
     box-shadow: none;
     border-radius: 0;
@@ -262,6 +268,11 @@ a {
     color: #f5c842;
     text-decoration: none;
     transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+a:focus-visible {
+    outline: 2px solid #8B4513;
+    outline-offset: 2px;
 }
 
 .tilbud-kort {
@@ -456,14 +467,6 @@ main a {
 
 main a:hover {
   color: #3b1f0e;
-}
-
-.forsidebilde img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
 }
 
 .omoss-bilde {
