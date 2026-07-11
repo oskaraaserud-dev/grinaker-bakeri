@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="nb">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ditt Bakeri tilbyr nybakt bakverk og kaffe hver dag. Se vår meny, ukas tilbud og åpningstider.">
+  <meta name="description" content="Ditt Bakeri tilbyr nybakt bakverk og kaffe hver dag. Se meny, ukas tilbud og åpningstider. Besøk oss i Storgata 1, Oslo, nybakt fra klokken 07 hver dag.">
   <title>Ditt Bakeri | Nybakt bakverk hver dag</title>
   <link rel="canonical" href="https://oskaraaserud-dev.github.io/generisk_bakeri/">
   <link rel="icon" href="Bilder/logo.svg" type="image/svg+xml">
@@ -15,7 +15,7 @@
   <meta property="og:site_name" content="Ditt Bakeri">
   <meta property="og:locale" content="nb_NO">
   <meta property="og:title" content="Ditt Bakeri | Nybakt bakverk hver dag">
-  <meta property="og:description" content="Ditt Bakeri tilbyr nybakt bakverk og kaffe hver dag. Se vår meny, ukas tilbud og åpningstider.">
+  <meta property="og:description" content="Ditt Bakeri tilbyr nybakt bakverk og kaffe hver dag. Se meny, ukas tilbud og åpningstider. Besøk oss i Storgata 1, Oslo, nybakt fra klokken 07 hver dag.">
   <meta property="og:url" content="https://oskaraaserud-dev.github.io/generisk_bakeri/">
   <meta property="og:image" content="https://oskaraaserud-dev.github.io/generisk_bakeri/Bilder/hero.svg">
   <meta name="twitter:card" content="summary_large_image">
@@ -29,6 +29,8 @@
     "image": "https://oskaraaserud-dev.github.io/generisk_bakeri/Bilder/om-oss.svg",
     "telephone": "+47 22 33 44 55",
     "email": "post@dittbakeri.no",
+    "priceRange": "$$",
+    "hasMenu": "https://oskaraaserud-dev.github.io/generisk_bakeri/Meny.html",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Storgata 1",
@@ -48,11 +50,13 @@
     ]
   }
   </script>
+  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
+  <a class="skip-link" href="#innhold">Hopp til innhold</a>
   <header class="over-hero">
   <a class="brand" href="index.html" aria-label="Til forsiden">
-    <img src="Bilder/logo.svg" alt="" class="header-logo">
+    <img src="Bilder/logo.svg" alt="" class="header-logo" width="48" height="48">
     <h1 class="bakerinavn">Ditt Bakeri</h1>
   </a>
 
@@ -93,7 +97,7 @@
   <section class="hero-full">
     <div class="hero-full__bg" aria-hidden="true"></div>
     <div class="hero-full__content">
-      <img src="Bilder/logo.svg" alt="Logo" class="hero-full__logo reveal is-visible">
+      <img src="Bilder/logo.svg" alt="" class="hero-full__logo reveal is-visible" width="130" height="130">
       <h2 class="reveal is-visible reveal-delay-1">Velkommen til <span class="bakerinavn">Ditt Bakeri</span></h2>
       <p class="reveal is-visible reveal-delay-2">Nybakt bakverk og nytraktet kaffe hver dag. Kom innom og kjenn duften!</p>
       <a href="Meny.html" class="knapp reveal is-visible reveal-delay-3">Se vår meny</a>
@@ -134,10 +138,10 @@
     <input type="hidden" name="_next" value="takk.html">
 
     <label for="navn">Navn:</label>
-    <input type="text" id="navn" name="Navn" placeholder="Ola Nordmann" required>
+    <input type="text" id="navn" name="Navn" placeholder="Ola Nordmann" autocomplete="name" required>
 
     <label for="epost">E-post:</label>
-    <input type="email" id="epost" name="E-post" placeholder="din@epost.no" required>
+    <input type="email" id="epost" name="E-post" placeholder="din@epost.no" autocomplete="email" required>
 
     <label for="melding">Melding:</label>
     <textarea id="melding" name="Melding" rows="5" required></textarea>
@@ -148,8 +152,8 @@
  </main>
  <footer>
   <p><span aria-hidden="true">📍</span> <span class="sr-only">Adresse:</span> Storgata 1, 0170 Oslo</p>
-  <p><span aria-hidden="true">📞</span> <span class="sr-only">Telefon:</span> +47 22 33 44 55</p>
-  <p><span aria-hidden="true">📧</span> <span class="sr-only">E-post:</span> post@dittbakeri.no</p>
+  <p><span aria-hidden="true">📞</span> <span class="sr-only">Telefon:</span> <a class="kontakt-lenke" href="tel:+4722334455">+47 22 33 44 55</a></p>
+  <p><span aria-hidden="true">📧</span> <span class="sr-only">E-post:</span> <a class="kontakt-lenke" href="mailto:post@dittbakeri.no">post@dittbakeri.no</a></p>
   <p>© 2026 <span class="bakerinavn">Ditt Bakeri</span></p>
   <a href="https://www.facebook.com/dittbakeri" target="_blank" rel="noopener noreferrer">Facebook</a>
 <a href="https://www.instagram.com/dittbakeri/" target="_blank" rel="noopener noreferrer">Instagram</a>

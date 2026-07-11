@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.querySelectorAll('.bakerinavn').forEach(function (el) {
         el.textContent = navn;
       });
-      document.title = document.title.replace(/Ditt Bakeri/g, navn);
+      document.title = document.title.replace(/Ditt Bakeri/g, function () { return navn; });
     }
   } catch (e) { /* eldre nettlesere: behold standardnavn */ }
 

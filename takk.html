@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
+  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
+  <a class="skip-link" href="#innhold">Hopp til innhold</a>
   <header>
     <a class="brand" href="index.html" aria-label="Til forsiden">
-      <img src="Bilder/logo.svg" alt="" class="header-logo">
+      <img src="Bilder/logo.svg" alt="" class="header-logo" width="48" height="48">
       <h1 class="bakerinavn">Ditt Bakeri</h1>
     </a>
 
@@ -53,7 +55,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="innhold">
     <section class="reveal">
       <h2>Takk for din henvendelse!</h2>
       <p>Vi har mottatt meldingen din og svarer så raskt vi kan.</p>
@@ -63,9 +65,9 @@
 
  <footer>
   <p><span aria-hidden="true">📍</span> <span class="sr-only">Adresse:</span> Storgata 1, 0170 Oslo</p>
-  <p><span aria-hidden="true">📞</span> <span class="sr-only">Telefon:</span> +47 22 33 44 55</p>
-  <p><span aria-hidden="true">📧</span> <span class="sr-only">E-post:</span> post@dittbakeri.no</p>
-  <p>© 2026 Ditt Bakeri</p>
+  <p><span aria-hidden="true">📞</span> <span class="sr-only">Telefon:</span> <a class="kontakt-lenke" href="tel:+4722334455">+47 22 33 44 55</a></p>
+  <p><span aria-hidden="true">📧</span> <span class="sr-only">E-post:</span> <a class="kontakt-lenke" href="mailto:post@dittbakeri.no">post@dittbakeri.no</a></p>
+  <p>© 2026 <span class="bakerinavn">Ditt Bakeri</span></p>
   <a href="https://www.facebook.com/dittbakeri" target="_blank" rel="noopener noreferrer">Facebook</a>
 <a href="https://www.instagram.com/dittbakeri/" target="_blank" rel="noopener noreferrer">Instagram</a>
 </footer>
