@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://oskaraaserud-dev.github.io/grinaker-bakeri/sitemap.xml
+

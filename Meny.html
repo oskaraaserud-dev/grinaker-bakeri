@@ -3,28 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Menyen hos Grinaker bakeri i Brandbu: brød og rundstykker, søtt bakverk, kaker, kaffe og catering. Alt bakes fra bunnen hver dag.">
 
-  <!-- MIDLERTIDIG: holder siden utenfor Google så lenge varene og prisene
-       lenger ned er plassholdere. Uten denne kan folk som googler
-       «Grinaker bakeri priser» lande her og tro at de oppdiktede prisene
-       er ekte.
-       FJERN denne linjen (og legg Meny.html tilbake i sitemap.xml) når
-       bakeriets faktiske utvalg og priser er lagt inn. -->
+  <!-- ═══ GENERERT AV verktoy/publiser.html – ikke rediger for hånd ═══ -->
+  <title>Meny – Grinaker bakeri</title>
+  <meta name="description" content="Menyen hos Grinaker bakeri. Prisene gjelder over disk og kan endre seg. Fullt utvalg får du i butikken.">
+
+  <!-- side.menyNoindex = true i config.js: holder menysiden utenfor Google.
+       Bruk det mens prisene er plassholdere. Husk å sette den til false
+       – og legge Meny.html tilbake i sitemap.xml – når tallene er ekte. -->
   <meta name="robots" content="noindex, follow">
 
-  <title>Meny – Grinaker bakeri i Brandbu</title>
   <link rel="canonical" href="https://oskaraaserud-dev.github.io/grinaker-bakeri/Meny.html">
-  <link rel="icon" href="Bilder/logo.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="icon" href="mal/Bilder/logo.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Grinaker bakeri">
   <meta property="og:locale" content="nb_NO">
   <meta property="og:title" content="Meny – Grinaker bakeri">
-  <meta property="og:description" content="Brød og rundstykker, søtt bakverk, kaker, kaffe og catering i Brandbu på Hadeland.">
+  <meta property="og:description" content="Menyen hos Grinaker bakeri. Prisene gjelder over disk og kan endre seg. Fullt utvalg får du i butikken.">
   <meta property="og:url" content="https://oskaraaserud-dev.github.io/grinaker-bakeri/Meny.html">
   <meta property="og:image" content="https://oskaraaserud-dev.github.io/grinaker-bakeri/Bilder/delingsbilde.png">
   <meta property="og:image:width" content="1200">
@@ -32,14 +27,25 @@
   <meta property="og:image:alt" content="Grinaker bakeri – bakeri og kafé i Brandbu">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://oskaraaserud-dev.github.io/grinaker-bakeri/Bilder/delingsbilde.png">
+  <!-- ═══════════════════ SLUTT GENERERT BLOKK ═══════════════════ -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mal/CSS/style.css">
+
+  <script src="config.js"></script>
+  <script src="mal/JS/mal.js"></script>
+
   <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
   <a class="skip-link" href="#innhold">Hopp til innhold</a>
+
   <header>
-    <a class="brand" href="index.html" aria-label="Grinaker bakeri – til forsiden">
-      <img src="Bilder/logo.svg" alt="" class="header-logo" width="48" height="48">
-      <h1>Grinaker bakeri</h1>
+    <a class="brand" href="index.html" aria-label="Til forsiden">
+      <img src="mal/Bilder/logo.svg" data-bak-src="bilder.logo" alt="" class="header-logo" width="48" height="48">
+      <h1 data-bak="bedrift.navn">Ditt Bakeri</h1>
     </a>
 
     <nav class="kjevle-nav" aria-label="Hovednavigasjon">
@@ -88,27 +94,25 @@
 
     <section class="hero">
       <h2>Meny</h2>
-      <p class="seksjon-ingress">Alt bakes fra bunnen hver dag. Utvalget varierer med sesong og dag – her er det vi vanligvis har inne.</p>
+      <p class="seksjon-ingress" data-bak="meny.ingress">Alt bakes fra bunnen hver dag. Utvalget varierer med sesong og dag – her er det vi vanligvis har inne.</p>
     </section>
 
-    <!-- ===== FRA DISKEN: visuell smakebit ===== -->
+    <!-- ===== FRA DISKEN: visuell smakebit (config.produkter) ===== -->
     <section class="reveal">
       <h2>Fra disken</h2>
       <div class="produkt-grid">
         <article class="produkt-kort">
-          <img src="Bilder/bakverk.jpg" alt="Ferskt bakverk i disken hos Grinaker bakeri" class="produkt-bilde" width="960" height="960" loading="lazy">
+          <img src="mal/Bilder/produkt.svg" alt="Ferskt bakverk i disken" class="produkt-bilde" width="800" height="800" loading="lazy">
           <h3>Bakverk</h3>
           <p>Nybakt brød, boller, snurrer og wienerbrød – ferskt fra disken hver dag.</p>
         </article>
-
         <article class="produkt-kort">
-          <img src="Bilder/kake.jpg" alt="Hvit sjokoladekake pyntet med roser fra Grinaker bakeri" class="produkt-bilde" width="1999" height="1111" loading="lazy">
+          <img src="mal/Bilder/produkt.svg" alt="Kake pyntet til fest" class="produkt-bilde" width="800" height="800" loading="lazy">
           <h3>Kaker til fest</h3>
           <p>Bursdags- og festkaker etter ønske. Bestilles på forhånd.</p>
         </article>
-
         <article class="produkt-kort">
-          <img src="Bilder/smultringer.jpg" alt="Nystekte smultringer på fat hos Grinaker bakeri" class="produkt-bilde" width="1139" height="1600" loading="lazy">
+          <img src="mal/Bilder/produkt.svg" alt="Nystekte smultringer" class="produkt-bilde" width="800" height="800" loading="lazy">
           <h3>Smultringer</h3>
           <p>Nystekte smultringer, en ekte klassiker rett fra disken.</p>
         </article>
@@ -116,153 +120,40 @@
     </section>
 
     <!-- ===== PRISER =====
-      ┌─────────────────────────────────────────────────────────────────────┐
-      │  OBS: MIDLERTIDIGE PLASSHOLDERPRISER OG -VARER – IKKE EKTE.         │
-      │  Både varelinjene og prisene under er funnet på til utkastet, kun   │
-      │  satt til realistiske nivåer for å vise hvordan menyen ser ut.      │
-      │                                                                     │
-      │  MÅ erstattes med Grinaker bakeris faktiske utvalg og priser før    │
-      │  siden tas i bruk som bakeriets offisielle nettside. Ellers møter   │
-      │  kunder noe helt annet i disken enn det som står her.               │
-      │                                                                     │
-      │  SLIK UTVIDER DU MENYEN:                                            │
-      │  - Ny kategori: kopier en hel <div class="menygruppe">-blokk.       │
-      │  - Ny vare:     kopier én <li class="prisrad">-linje.               │
-      │  Alt av layout følger automatisk – ingen CSS-endring nødvendig.     │
-      └─────────────────────────────────────────────────────────────────────┘
-    -->
+         Bygges i sin helhet fra config.meny.grupper.
+
+         SLIK UTVIDER DU MENYEN – i config.js, ikke her:
+           Ny kategori: legg til et objekt i meny.grupper[]
+           Ny vare:     legg til et objekt i den kategoriens varer[]
+         Layouten følger automatisk, uansett hvor mange varer og kategorier
+         som kommer til. Ingen CSS-endring nødvendig.
+
+         Vil du ikke vise priser i det hele tatt: sett pris: '' på hver vare. -->
     <section class="reveal" id="priser">
       <h2>Priser</h2>
 
-      <div class="menygruppe">
-        <h3 class="menygruppe__tittel">Brød og rundstykker</h3>
-        <ul class="prisliste">
-          <li class="prisrad">
-            <div class="prisrad__vare">
-              <h4>Rundstykker</h4>
-              <p>Grove eller fine, rett fra ovnen.</p>
-            </div>
-            <span class="pris">25 kr</span>
-          </li>
-          <li class="prisrad">
-            <div class="prisrad__vare">
-              <h4>Grovbrød</h4>
-              <p>Helt brød, bakt samme morgen.</p>
-            </div>
-            <span class="pris">55 kr</span>
-          </li>
-          <li class="prisrad">
-            <div class="prisrad__vare">
-              <h4>Loff</h4>
-              <p>Lys og luftig.</p>
-            </div>
-            <span class="pris">49 kr</span>
-          </li>
-        </ul>
+      <div data-bak-prisliste>
+        <div class="menygruppe">
+          <h3 class="menygruppe__tittel">Søtt bakverk</h3>
+          <ul class="prisliste">
+            <li class="prisrad">
+              <div class="prisrad__vare">
+                <h4>Kanelsnurr</h4>
+                <p>Nybakt snurr med smør og kanel.</p>
+              </div>
+              <span class="pris">42 kr</span>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="menygruppe">
-        <h3 class="menygruppe__tittel">Søtt bakverk</h3>
-        <ul class="prisliste">
-          <li class="prisrad">
-            <div class="prisrad__vare">
-              <h4>Kanelsnurr</h4>
-              <p>Nybakt snurr med smør og kanel.</p>
-            </div>
-            <span class="pris">42 kr</span>
-          </li>
-          <li class="prisrad">
-            <div class="prisrad__vare">
-              <h4>Skolebrød</h4>
-              <p>Vaniljekrem og kokos.</p>
-            </div>
-            <span class="pris">42 kr</span>
-          </li>
-          <li class="prisrad">
-            <div class="prisrad__vare">
-              <h4>Wienerbrød</h4>
-              <p>Sprøtt og smørbakt.</p>
-            </div>
-            <span class="pris">45 kr</span>
-          </li>
-          <li class="prisrad">
-            <div class="prisrad__vare">
-              <h4>Smultring</h4>
-              <p>Nystekt, en ekte klassiker.</p>
-            </div>
-            <span class="pris">30 kr</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="menygruppe">
-        <h3 class="menygruppe__tittel">Kaker</h3>
-        <ul class="prisliste">
-          <li class="prisrad">
-            <div class="prisrad__vare">
-              <h4>Bløtkake</h4>
-              <p>Klassisk bløtkake med krem og bær – per stykke.</p>
-            </div>
-            <span class="pris">69 kr</span>
-          </li>
-          <li class="prisrad">
-            <div class="prisrad__vare">
-              <h4>Sjokoladekake</h4>
-              <p>Saftig, med sjokoladeglasur – per stykke.</p>
-            </div>
-            <span class="pris">65 kr</span>
-          </li>
-          <li class="prisrad">
-            <div class="prisrad__vare">
-              <h4>Hel bløtkake til fest</h4>
-              <p>Bestilles på forhånd. Pris etter størrelse og pynt.</p>
-            </div>
-            <span class="pris">fra 595 kr</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="menygruppe">
-        <h3 class="menygruppe__tittel">Kafé og drikke</h3>
-        <ul class="prisliste">
-          <li class="prisrad">
-            <div class="prisrad__vare">
-              <h4>Kaffe</h4>
-              <p>Traktet kaffe. Påfyll er gratis når du sitter inne.</p>
-            </div>
-            <span class="pris">39 kr</span>
-          </li>
-          <li class="prisrad">
-            <div class="prisrad__vare">
-              <h4>Kaffe latte</h4>
-              <p>Espresso med dampet melk.</p>
-            </div>
-            <span class="pris">52 kr</span>
-          </li>
-          <li class="prisrad">
-            <div class="prisrad__vare">
-              <h4>Cappuccino</h4>
-              <p>Espresso med melkeskum.</p>
-            </div>
-            <span class="pris">49 kr</span>
-          </li>
-          <li class="prisrad">
-            <div class="prisrad__vare">
-              <h4>Te</h4>
-              <p>Utvalg av sorter.</p>
-            </div>
-            <span class="pris">35 kr</span>
-          </li>
-        </ul>
-      </div>
-
-      <p class="meny-note">Prisene gjelder over disk og kan endre seg. Fullt utvalg får du i butikken – ring gjerne på <a class="kontakt-lenke" href="tel:+4761330329">+47 61 33 03 29</a> hvis du lurer på om vi har noe bestemt inne.</p>
+      <p class="meny-note" data-bak-rik="meny.note">Prisene gjelder over disk og kan endre seg. Fullt utvalg får du i butikken.</p>
     </section>
 
-    <!-- ===== PÅ BESTILLING ===== -->
+    <!-- ===== PÅ BESTILLING (config.meny.paaBestilling) ===== -->
     <section class="reveal">
       <h2>På bestilling</h2>
-      <ul class="meny-kategorier">
+      <ul class="meny-kategorier" data-bak-bestilling>
         <li class="meny-kategori">
           <h3>Kaker til fest</h3>
           <p>Bursdags- og festkaker etter ønske – si fra hva du vil ha, så lager vi den.</p>
@@ -282,12 +173,13 @@
   </main>
 
   <footer>
-    <p><span aria-hidden="true">📍</span> <span class="sr-only">Adresse:</span> Storlinna 48, 2760 Brandbu</p>
-    <p><span aria-hidden="true">📞</span> <span class="sr-only">Telefon:</span> <a class="kontakt-lenke" href="tel:+4761330329">+47 61 33 03 29</a></p>
-    <p><span aria-hidden="true">📧</span> <span class="sr-only">E-post:</span> <a class="kontakt-lenke" href="mailto:grinakerbaker@gmail.com">grinakerbaker@gmail.com</a></p>
-    <p>© 2026 Grinaker bakeri</p>
-    <a href="https://www.facebook.com/p/Grinaker-Bakeri-As-100084157203045/" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <p><span aria-hidden="true">📍</span> <span class="sr-only">Adresse:</span> <span data-bak-adresse>Storgata 1, 0155 Storby</span></p>
+    <p><span aria-hidden="true">📞</span> <span class="sr-only">Telefon:</span> <a class="kontakt-lenke" data-bak-tel="kontakt.telefonTel" data-bak="kontakt.telefon" href="tel:+4722000000">+47 22 00 00 00</a></p>
+    <p><span aria-hidden="true">📧</span> <span class="sr-only">E-post:</span> <a class="kontakt-lenke" data-bak-epost="kontakt.epost" data-bak="kontakt.epost" href="mailto:post@dittbakeri.no">post@dittbakeri.no</a></p>
+    <p>© <span data-bak="bedrift.aarstall">2026</span> <span data-bak="bedrift.navn">Ditt Bakeri</span></p>
+    <span data-bak-sosialt></span>
   </footer>
-  <script src="JS/main.js"></script>
+
+  <script src="mal/JS/main.js"></script>
 </body>
 </html>

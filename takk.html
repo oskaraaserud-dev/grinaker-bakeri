@@ -3,39 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Takk for bestillingen til Grinaker bakeri. Vi tar kontakt for å bekrefte.">
-  <meta name="robots" content="noindex, follow">
+
+  <!-- ═══ GENERERT AV verktoy/publiser.html – ikke rediger for hånd ═══ -->
   <title>Takk – Grinaker bakeri</title>
-  <link rel="icon" href="Bilder/logo.svg" type="image/svg+xml">
+  <meta name="description" content="Takk for bestillingen. Vi tar kontakt for å bekrefte.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="mal/Bilder/logo.svg" type="image/svg+xml">
+  <!-- ═══════════════════ SLUTT GENERERT BLOKK ═══════════════════ -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="CSS/style.css">
-  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+  <link rel="stylesheet" href="mal/CSS/style.css">
+
+  <script src="config.js"></script>
+  <script src="mal/JS/mal.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#innhold">Hopp til innhold</a>
+
   <header>
-    <a class="brand" href="index.html" aria-label="Grinaker bakeri – til forsiden">
-      <img src="Bilder/logo.svg" alt="" class="header-logo" width="48" height="48">
-      <h1>Grinaker bakeri</h1>
+    <a class="brand" href="index.html" aria-label="Til forsiden">
+      <img src="mal/Bilder/logo.svg" data-bak-src="bilder.logo" alt="" class="header-logo" width="48" height="48">
+      <h1 data-bak="bedrift.navn">Ditt Bakeri</h1>
     </a>
   </header>
 
   <main id="innhold">
+    <!-- Ingen .reveal her: denne siden er en kvittering og MÅ vises selv om
+         JavaScript feiler. .reveal starter på opacity:0, så en kvittering med
+         den klassen blir usynlig hvis scriptet ikke kjører. -->
     <section>
       <h2>Takk for bestillingen!</h2>
       <p>Vi har mottatt forespørselen din og tar kontakt for å bekrefte så raskt vi kan i åpningstiden.</p>
-      <p>Haster det? Ring oss på <a class="kontakt-lenke" href="tel:+4761330329">+47 61 33 03 29</a>.</p>
+      <p>Haster det? Ring oss på
+        <a class="kontakt-lenke" data-bak-tel="kontakt.telefonTel" data-bak="kontakt.telefon" href="tel:+4722000000">+47 22 00 00 00</a>.
+      </p>
       <p><a class="knapp" href="index.html">Tilbake til forsiden</a></p>
     </section>
   </main>
 
   <footer>
-    <p><span aria-hidden="true">📍</span> <span class="sr-only">Adresse:</span> Storlinna 48, 2760 Brandbu</p>
-    <p><span aria-hidden="true">📞</span> <span class="sr-only">Telefon:</span> <a class="kontakt-lenke" href="tel:+4761330329">+47 61 33 03 29</a></p>
-    <p><span aria-hidden="true">📧</span> <span class="sr-only">E-post:</span> <a class="kontakt-lenke" href="mailto:grinakerbaker@gmail.com">grinakerbaker@gmail.com</a></p>
-    <p>© 2026 Grinaker bakeri</p>
+    <p><span aria-hidden="true">📍</span> <span class="sr-only">Adresse:</span> <span data-bak-adresse>Storgata 1, 0155 Storby</span></p>
+    <p><span aria-hidden="true">📞</span> <span class="sr-only">Telefon:</span> <a class="kontakt-lenke" data-bak-tel="kontakt.telefonTel" data-bak="kontakt.telefon" href="tel:+4722000000">+47 22 00 00 00</a></p>
+    <p><span aria-hidden="true">📧</span> <span class="sr-only">E-post:</span> <a class="kontakt-lenke" data-bak-epost="kontakt.epost" data-bak="kontakt.epost" href="mailto:post@dittbakeri.no">post@dittbakeri.no</a></p>
+    <p>© <span data-bak="bedrift.aarstall">2026</span> <span data-bak="bedrift.navn">Ditt Bakeri</span></p>
+    <span data-bak-sosialt></span>
   </footer>
+
+  <script src="mal/JS/main.js"></script>
 </body>
 </html>
