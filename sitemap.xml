@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://oskaraaserud-dev.github.io/grinaker-bakeri/</loc><lastmod>2026-07-12</lastmod><priority>1.0</priority></url>
+<!-- Meny.html er midlertidig tatt ut: den star pa noindex sa lenge varene
+     og prisene er plassholdere. Legg linja under tilbake nar bakeriets
+     faktiske priser er inne, og fjern noindex i Meny.html.
 <url><loc>https://oskaraaserud-dev.github.io/grinaker-bakeri/Meny.html</loc><lastmod>2026-07-12</lastmod><priority>0.8</priority></url>
+-->
 </urlset>
